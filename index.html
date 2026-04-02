@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SABOR URBANO | Cocina de Autor con Alma Local</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind CSS (para utilidades rápidas si son necesarias, aunque el CSS principal está en styles.css) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <a href="#" class="footer-logo">
+                SABOR<span>URBANO</span>
+            </a>
+            <div class="navbar-links hidden md:flex items-center gap-8">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#nosotros" class="nav-link">Nosotros</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#galeria" class="nav-link">Galeria</a>
+                <a href="#reservaciones" class="nav-link">Reservaciones</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#galeria" class="nav-link">Galeria</a>
+        <a href="#reservaciones" class="nav-link">Reservaciones</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Cocina de Autor</div>
+            <h1>Donde la Tradicion <span>se Reinventa</span></h1>
+            <p class="hero-subtitle">Cocina fusión que mezcla técnicas europeas con ingredientes locales, creando experiencias culinarias únicas en el corazón de la ciudad</p>
+            <div class="hero-buttons">
+                <a href="#reservaciones" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Reserva tu mesa
+                </a>
+                <a href="#menu" class="btn-secondary">
+                    Ver menu
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="nosotros">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-left">
+                    <span class="section-label">Nuestra Historia</span>
+                    <h2 class="section-title">Una tradicion de sabor y pasion</h2>
+                    <p class="about-text">
+                        Fundado en 2015, SABOR URBANO nació de la visión de crear un espacio donde la cocina tradicional europea se encontrara con los ingredientes más frescos y vibrantes de nuestra tierra.
+                    </p>
+                    <p class="about-text">
+                        Nuestro chef ejecutivo, Martín Reyes, con más de 20 años de experiencia en restaurantes galardonados de España y Francia, lidera un equipo apasionado que transforma cada ingrediente en una obra de arte comestible.
+                    </p>
+                    <p class="about-text">
+                        Creemos que la gastronomía es un viaje sensorial. Cada plato cuenta una historia, cada bocado es una experiencia, y cada visita es una oportunidad de descubrir algo extraordinario.
+                    </p>
+                </div>
+                <div class="about-image-container animate-right">
+                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&q=80" alt="Chef Martín Reyes preparando un plato" class="about-image">
+                    <div class="about-image-frame"></div>
+                </div>
+            </div>
+            <div class="stats-grid animate-on-scroll">
+                <div class="stat-item">
+                    <div class="stat-number">9</div>
+                    <div class="stat-label">Años de Experiencia</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Premios Gastronómicos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15K+</div>
+                    <div class="stat-label">Clientes Satisfechos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12 animate-on-scroll">
+                <span class="section-label">Experiencia Gastronómica</span>
+                <h2 class="section-title">Nuestra Carta</h2>
+            </div>
+
+            <!-- Chef's Special -->
+            <div class="chef-special animate-on-scroll">
+                <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=400&q=80" alt="Plato especial del chef" class="chef-special-image">
+                <div class="chef-special-content">
+                    <span class="chef-special-badge">Recomendacion del Chef</span>
+                    <h3 class="menu-item-name">Risotto de Hongos Silvestres con Trufa Negra</h3>
+                    <p class="menu-item-description">Arroz arborio cocido lentamente con caldo de res, mezcla de hongos silvestres locales, terminado con aceite de trufa negra y parmigiano reggiano rallado al momento.</p>
+                    <div class="menu-item-price">$38.00</div>
+                </div>
+            </div>
+
+            <!-- Menu Tabs -->
+            <div class="menu-tabs animate-on-scroll">
+                <button class="menu-tab active" data-tab="entradas">Entradas</button>
+                <button class="menu-tab" data-tab="platos">Platos Fuertes</button>
+                <button class="menu-tab" data-tab="postres">Postres</button>
+                <button class="menu-tab" data-tab="bebidas">Bebidas</button>
+            </div>
+
+            <!-- Menu Content -->
+            <div id="entradas" class="menu-content active">
+                <div class="menu-grid">
+                    <div class="menu-item animate-on-scroll">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name">Carpaccio de Res</h4>
+                            <span class="menu-item-price">$18</span>
+                        </div>
+                        <p class="menu-item-description">Finas láminas de res premium con rúcula, alcaparras, láminas de parmesano y reducción de balsámico.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Sin Gluten</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-on-scroll">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name">Ceviche Nikkei</h4>
+                            <span class="menu-item-price">$22</span>
+                        </div>
+                        <p class="menu-item-description">Pescado fresco marinado en leche de tigre con toque de soja, jengibre y ají amarillo.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Sin Gluten</span>
+                            <span class="menu-tag">Picante</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-on-scroll">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name">Burrata con Tomates Heirloom</h4>
+                            <span class="menu-item-price">$20</span>
+                        </div>
+                        <p class="menu-item-description">Burrata cremosa con tomates multicolor, pesto de albahaca y reducción de modena.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Vegetariano</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-on-scroll">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name">Tartar de Atún Rojo</h4>
+                            <span class="menu-item-price">$26</span>
+                        </div>
+                        <p class="menu-item-description">Atún rojo cortado a cuchillo con aguacate, sésamo tostado y mayonesa de wasabi.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Sin Gluten</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="platos" class="menu-content">
+                <div class="menu-grid">
+                    <div class="menu-item animate-on-scroll">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name">Filete Mignon con Salsa de Vino</h4>
+                            <span class="menu-item-price">$45</span>
+                        </div>
+                        <p class="menu-item-description">Corte premium de res con salsa de vino tinto, puré de papa trufado y vegetales de temporada.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Sin Gluten</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-on-scroll">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name">Salmón Atlántico</h4>
+                            <span class="menu-item-price">$38</span>
+                        </div>
+                        <p class="menu-item-description">Salmón salvaje con costra de hierbas, risotto de limón y espárragos grillados.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Sin Gluten</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-on-scroll">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name">Pappardelle con Ragú de Cordero</h4>
+                            <span class="menu-item-price">$34</span>
+                        </div>
+                        <p class="menu-item-description">Pasta fresca artesanal con ragú de cordero desmenuzado, tomates san marzano y menta fresca.</p>
+                        <div class="menu-item-tags">
+                        </div>
+                    </div>
+                    <div class="menu-item animate-on-scroll">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name">Pollo de Granja Confitado</h4>
+                            <span class="menu-item-price">$32</span>
+                        </div>
+                        <p class="menu-item-description">Muslo de pollo confitado lentamente con polenta cremosa y champiñones salteados.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Sin Gluten</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="postres" class="menu-content">
+                <div class="menu-grid">
+                    <div class="menu-item animate-on-scroll">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name">Tiramisú Clásico</h4>
+                            <span class="menu-item-price">$14</span>
+                        </div>
+                        <p class="menu-item-description">Capas de bizcocho savoiardi empapado en café, mascarpone cremoso y cacao amargo.</p>
+                        <div class="menu-item-tags">
+                        </div>
+                    </div>
+                    <div class="menu-item animate-on-scroll">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name">Crème Brûlée</h4>
+                            <span class="menu-item-price">$12</span>
+                        </div>
+                        <p class="menu-item-description">Crema de vainilla con costra de azúcar caramelizado y frutos rojos frescos.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Sin Gluten</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-on-scroll">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name">Tarta de Chocolate Belga</h4>
+                            <span class="menu-item-price">$15</span>
+                        </div>
+                        <p class="menu-item-description">Tarta densa de chocolate 70% cacao con helado de vainilla bourbon y coulis de frambuesa.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Vegetariano</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-on-scroll">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name">Sorbete de Frutas Tropicales</h4>
+                            <span class="menu-item-price">$10</span>
+                        </div>
+                        <p class="menu-item-description">Sorbete artesanal de maracuyá, mango y guanábana con hojas de menta fresca.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Vegano</span>
+                            <span class="menu-tag">Sin Gluten</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bebidas" class="menu-content">
+                <div class="menu-grid">
+                    <div class="menu-item animate-on-scroll">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name">Copa de Vino Tinto</h4>
+                            <span class="menu-item-price">$12</span>
+                        </div>
+                        <p class="menu-item-description">Selección de vinos de nuestra cava: Malbec, Cabernet Sauvignon o Merlot.</p>
+                        <div class="menu-item-tags">
+                        </div>
+                    </div>
+                    <div class="menu-item animate-on-scroll">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name">Copa de Vino Blanco</h4>
+                            <span class="menu-item-price">$11</span>
+                        </div>
+                        <p class="menu-item-description">Chardonnay, Sauvignon Blanc o Riesling de viñedos seleccionados.</p>
+                        <div class="menu-item-tags">
+                        </div>
+                    </div>
+                    <div class="menu-item animate-on-scroll">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name">Cóctel Signature</h4>
+                            <span class="menu-item-price">$16</span>
+                        </div>
+                        <p class="menu-item-description">Gin tonic infusionado con hierbas locales, pepino y cáscara de limón.</p>
+                        <div class="menu-item-tags">
+                        </div>
+                    </div>
+                    <div class="menu-item animate-on-scroll">
+                        <div class="menu-item-header">
+                            <h4 class="menu-item-name">Café de Especialidad</h4>
+                            <span class="menu-item-price">$5</span>
+                        </div>
+                        <p class="menu-item-description">Espresso, americano, cappuccino o latte preparado con granos de origen único.</p>
+                        <div class="menu-item-tags">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center animate-on-scroll">
+                <button class="download-menu">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Descargar Menu Completo (PDF)
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="galeria">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12 animate-on-scroll">
+                <span class="section-label">Momentos</span>
+                <h2 class="section-title">Nuestra Galeria</h2>
+            </div>
+            <div class="gallery-grid animate-on-scroll">
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Interior del restaurante">
+                    <div class="gallery-overlay">
+                        <div class="gallery-expand">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <polyline points="9 21 3 21 3 15"></polyline>
+                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Plato gourmet">
+                    <div class="gallery-overlay">
+                        <div class="gallery-expand">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <polyline points="9 21 3 21 3 15"></polyline>
+                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Presentación de plato">
+                    <div class="gallery-overlay">
+                        <div class="gallery-expand">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <polyline points="9 21 3 21 3 15"></polyline>
+                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Ambiente del restaurante">
+                    <div class="gallery-overlay">
+                        <div class="gallery-expand">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <polyline points="9 21 3 21 3 15"></polyline>
+                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&q=80">
+                    <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80" alt="Chef preparando">
+                    <div class="gallery-overlay">
+                        <div class="gallery-expand">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <polyline points="9 21 3 21 3 15"></polyline>
+                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80">
+                    <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&q=80" alt="Ingredientes frescos">
+                    <div class="gallery-overlay">
+                        <div class="gallery-expand">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <polyline points="9 21 3 21 3 15"></polyline>
+                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-label="Visor de imágenes">
+        <button class="lightbox-close" aria-label="Cerrar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="Imagen ampliada" id="lightboxImg">
+        </div>
+    </div>
+
+    <!-- Reservation Section -->
+    <section class="reservation-section" id="reservaciones">
+        <div class="reservation-bg"></div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="reservation-form-container animate-on-scroll">
+                <span class="section-label">Reservaciones</span>
+                <h2 class="section-title">Reserva tu Experiencia</h2>
+                
+                <form id="reservationForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="fecha">Fecha</label>
+                            <input type="date" id="fecha" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="hora">Hora</label>
+                            <select id="hora" class="form-select" required>
+                                <option value="">Seleccionar hora</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                                <option value="22:00">10:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="personas">Numero de Personas</label>
+                            <select id="personas" class="form-select" required>
+                                <option value="">Seleccionar</option>
+                                <option value="1">1 persona</option>
+                                <option value="2">2 personas</option>
+                                <option value="3">3 personas</option>
+                                <option value="4">4 personas</option>
+                                <option value="5">5 personas</option>
+                                <option value="6">6 personas</option>
+                                <option value="7+">7+ personas</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" class="form-input" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="telefono">Telefono</label>
+                            <input type="tel" id="telefono" class="form-input" placeholder="+1 234 567 890" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label class="form-label" for="comentarios">Comentarios Especiales</label>
+                            <textarea id="comentarios" class="form-textarea" placeholder="Alergias, celebraciones, preferencias de mesa..."></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <button type="submit" class="submit-btn">Confirmar Reservacion</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="success-message" id="successMessage">
+                    <div class="success-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="success-title">Reservacion Confirmada</h3>
+                    <p class="success-text">Hemos enviado un correo de confirmacion. Te esperamos pronto.</p>
+                </div>
+
+                <div class="call-alternative">
+                    <p>Prefieres llamar? <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12 animate-on-scroll">
+                <span class="section-label">Testimonios</span>
+                <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            </div>
+
+            <div class="testimonials-carousel animate-on-scroll">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </div>
+                    <p class="testimonial-text">"Una experiencia gastronómica inolvidable. El risotto de hongos fue el mejor que he probado en mi vida. El servicio impecable y el ambiente sofisticado hacen de este lugar una joya."</p>
+                    <p class="testimonial-author">María Elena Torres</p>
+                    <p class="testimonial-date">Hace 2 semanas</p>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </div>
+                    <p class="testimonial-text">"Celebramos nuestro aniversario aquí y superó todas las expectativas. La atención personalizada del chef y la carta de vinos excepcional. Definitivamente regresaremos."</p>
+                    <p class="testimonial-author">Carlos y Andrea Méndez</p>
+                    <p class="testimonial-date">Hace 1 mes</p>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </div>
+                    <p class="testimonial-text">"Como foodie que ha visitado restaurantes en todo el mundo, puedo decir que SABOR URBANO está a la altura de los mejores. La fusión de sabores es magistral."</p>
+                    <p class="testimonial-author">Roberto Sánchez</p>
+                    <p class="testimonial-date">Hace 3 semanas</p>
+                </div>
+            </div>
+
+            <div class="carousel-dots">
+                <button class="carousel-dot active" data-slide="0" aria-label="Testimonio 1"></button>
+                <button class="carousel-dot" data-slide="1" aria-label="Testimonio 2"></button>
+                <button class="carousel-dot" data-slide="2" aria-label="Testimonio 3"></button>
+            </div>
+
+            <div class="text-center animate-on-scroll">
+                <button class="review-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                    Dejanos tu Resena
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contacto">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="contact-grid">
+                <div class="map-container animate-left">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.661959556729!2d-99.13320032439737!3d19.432607840959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sZocalo%2C%20Centro%20Historico%20de%20la%20Cdad.%20de%20Mexico%2C%20Centro%2C%20Ciudad%20de%20Mexico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1699887654321!5m2!1sen!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación del restaurante"></iframe>
+                </div>
+                <div class="contact-info animate-right">
+                    <span class="section-label">Contacto</span>
+                    <h3>Encuentranos</h3>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Direccion</h4>
+                            <p>Av. Reforma 222, Col. Centro<br>Ciudad de Mexico, CDMX 06000</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefono</h4>
+                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:reservaciones@saborurbano.com">reservaciones@saborurbano.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item" style="border-bottom: none;">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Horarios</h4>
+                            <p>Almuerzo: 12:00 PM - 4:00 PM<br>Cena: 7:00 PM - 11:00 PM<br>Lunes cerrado</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">SABOR<span>URBANO</span></div>
+                    <p class="footer-desc">Una experiencia gastronómica donde la tradición europea se encuentra con los sabores locales. Cada plato es una obra de arte, cada visita una memoria inolvidable.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Enlaces</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reservaciones">Reservaciones</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-desc">Recibe promociones exclusivas y novedades del chef.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Tu email" aria-label="Email para newsletter">
+                        <button type="submit" class="newsletter-btn" aria-label="Suscribirse">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">2024 SABOR URBANO. Todos los derechos reservados.</p>
+                <div class="payment-icons">
+                    <span>Visa</span>
+                    <span>Mastercard</span>
+                    <span>Amex</span>
+                </div>
+            </div>
+        </div>
+    </footer>                                                           
+
+    <!-- Scripts -->
+    <script>
+        // Initialize variables first
+        const navbar = document.getElementById('navbar');
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = mobileMenu.querySelectorAll('.nav-link');
+        const menuTabs = document.querySelectorAll('.menu-tab');
+        const menuContents = document.querySelectorAll('.menu-content');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxClose = document.querySelector('.lightbox-close');
+        const reservationForm = document.getElementById('reservationForm');
+        const successMessage = document.getElementById('successMessage');
+        const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+        const carouselDots = document.querySelectorAll('.carousel-dot');
+        
+        let currentSlide = 0;
+        let autoSlideInterval = null;
+
+        // Navbar scroll effect
+        function handleScroll() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        }
+
+        hamburger.addEventListener('click', toggleMobileMenu);
+        hamburger.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleMobileMenu();
+            }
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Menu tabs
+        menuTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                menuTabs.forEach(t => t.classList.remove('active'));
+                menuContents.forEach(c => c.classList.remove('active'));
+                
+                tab.classList.add('active');
+                const targetId = tab.getAttribute('data-tab');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+
+        // Gallery lightbox
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.getAttribute('data-src');
+                lightboxImg.src = imgSrc;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+
+        // Reservation form
+        reservationForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            reservationForm.style.display = 'none';
+            successMessage.classList.add('show');
+        });
+
+        // Set minimum date to today
+        const fechaInput = document.getElementById('fecha');
+        const today = new Date().toISOString().split('T')[0];
+        fechaInput.setAttribute('min', today);
+
+        // Testimonials carousel
+        function showSlide(index) {
+            testimonialSlides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            carouselDots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        carouselDots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                currentSlide = parseInt(dot.getAttribute('data-slide'));
+                showSlide(currentSlide);
+                resetAutoSlide();
+            });
+        });
+
+        function autoSlide() {
+            currentSlide = (currentSlide + 1) % testimonialSlides.length;
+            showSlide(currentSlide);
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(autoSlide, 5000);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+
+        startAutoSlide();
+
+        // Scroll animations with IntersectionObserver
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll, .animate-left, .animate-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navHeight = navbar.offsetHeight;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Newsletter form
+        document.querySelector('.newsletter-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const input = e.target.querySelector('input');
+            alert('Gracias por suscribirte a nuestro newsletter.');
+            input.value = '';
+        });
+
+        // Check reduced motion preference
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (prefersReducedMotion) {
+            clearInterval(autoSlideInterval);
+        }
+    </script>
+</body>
+</html>
